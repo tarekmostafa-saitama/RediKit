@@ -1,0 +1,63 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        
+        <!-- NuGet Package Configuration -->
+        <PackageId>RediKit</PackageId>
+        <PackageVersion>1.0.1</PackageVersion>
+        <Title>RediKit - Redis Caching and Distributed Locking</Title>
+        <Description>Simple and high-performance Redis caching and distributed locking for .NET 9 applications with JSON serialization. Features automatic health checks, clean interfaces for testing, and minimal configuration required.</Description>
+        <Authors>Your Name</Authors>
+        <Company>Your Company</Company>
+        <Product>RediKit</Product>
+        <Copyright>Copyright � $(Authors) $([System.DateTime]::Now.Year)</Copyright>
+        
+        <!-- Package Metadata -->
+        <PackageTags>redis;cache;caching;distributed-locking;json;serialization;health-checks;dotnet;performance</PackageTags>
+        <PackageProjectUrl>https://github.com/tarekmostafa-saitama/RediKit</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/tarekmostafa-saitama/RediKit.git</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageReleaseNotes>
+            v1.0.0:
+            - Initial release
+            - Redis caching with JSON serialization
+            - Distributed locking with atomic operations
+            - Built-in health checks
+            - Clean abstractions for testing
+            - Support for .NET 9
+        </PackageReleaseNotes>
+        
+        <!-- Build Configuration -->
+        <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+        <IncludeSymbols>true</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <NoWarn>$(NoWarn);CS1591</NoWarn>
+        
+        <!-- Assembly Information -->
+        <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <FileVersion>1.0.1.0</FileVersion>
+        <InformationalVersion>1.0.1</InformationalVersion>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="StackExchange.Redis" Version="2.7.33" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.0" />
+        <PackageReference Include="Microsoft.Extensions.Options" Version="9.0.0" />
+        <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="9.0.0" />
+        <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="9.0.0" />
+        <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks" Version="9.0.0" />
+        <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions" Version="9.0.0" />
+        <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
+    </ItemGroup>
+
+    <!-- Include README.md in the package -->
+    <ItemGroup>
+        <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+    </ItemGroup>
+</Project>
