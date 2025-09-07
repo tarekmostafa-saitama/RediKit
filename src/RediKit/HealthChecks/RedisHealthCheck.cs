@@ -1,9 +1,9 @@
-using Common.Cache.Configuration;
-using Common.Cache.Redis;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Microsoft.Extensions.Options;
+using RediKit.Configuration;
+using RediKit.Redis;
 
-namespace Common.Cache.HealthChecks;
+namespace RediKit.HealthChecks;
 
 /// <summary>
 /// Health check for Redis connectivity and basic operations.

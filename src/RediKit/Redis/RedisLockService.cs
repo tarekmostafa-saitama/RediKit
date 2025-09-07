@@ -1,11 +1,8 @@
-using System;
 using System.Security.Cryptography;
-using System.Threading;
-using System.Threading.Tasks;
-using Common.Cache.Abstractions;
+using RediKit.Abstractions;
 using StackExchange.Redis;
 
-namespace Common.Cache.Redis;
+namespace RediKit.Redis;
 
 internal sealed class RedisLockService : IRedisLockService
 {

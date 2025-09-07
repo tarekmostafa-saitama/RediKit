@@ -1,13 +1,13 @@
-using Common.Cache.Abstractions;
-using Common.Cache.Configuration;
-using Common.Cache.HealthChecks;
-using Common.Cache.Redis;
-using Common.Cache.Serialization;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
+using RediKit.Abstractions;
+using RediKit.Configuration;
+using RediKit.HealthChecks;
+using RediKit.Redis;
+using RediKit.Serialization;
 
-namespace Common.Cache.Extensions;
+namespace RediKit.Extensions;
 
 public static class ServiceCollectionExtensions
 {

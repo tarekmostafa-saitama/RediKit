@@ -1,6 +1,6 @@
 using System.Text.Json;
 
-namespace Common.Cache.Serialization;
+namespace RediKit.Serialization;
 
 /// <summary>
 /// Interface for cache value serialization.

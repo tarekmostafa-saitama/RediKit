@@ -1,4 +1,4 @@
-namespace Common.Cache.Configuration;
+namespace RediKit.Configuration;
 
 /// <summary>
 /// Health check configuration options.

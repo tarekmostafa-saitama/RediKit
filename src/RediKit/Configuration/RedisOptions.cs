@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace Common.Cache.Configuration;
+namespace RediKit.Configuration;
 
 /// <summary>
 /// Redis configuration options.

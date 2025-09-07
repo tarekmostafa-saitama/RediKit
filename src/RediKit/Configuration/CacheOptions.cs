@@ -1,4 +1,4 @@
-namespace Common.Cache.Configuration;
+namespace RediKit.Configuration;
 
 /// <summary>
 /// Root configuration options for the caching system.

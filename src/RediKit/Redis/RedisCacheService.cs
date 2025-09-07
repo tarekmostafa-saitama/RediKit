@@ -1,8 +1,8 @@
-using Common.Cache.Abstractions;
-using Common.Cache.Serialization;
+using RediKit.Abstractions;
+using RediKit.Serialization;
 using StackExchange.Redis;
 
-namespace Common.Cache.Redis;
+namespace RediKit.Redis;
 
 
 internal sealed class RedisCacheService(IRedisDatabaseAccessor connectionProvider, ICacheSerializer serializer)

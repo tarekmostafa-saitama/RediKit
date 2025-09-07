@@ -1,7 +1,7 @@
-using Common.Cache.Configuration;
+using RediKit.Configuration;
 using StackExchange.Redis;
 
-namespace Common.Cache.Redis;
+namespace RediKit.Redis;
 
 internal interface IRedisDatabaseAccessor
 {

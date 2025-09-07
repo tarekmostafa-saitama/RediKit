@@ -1,9 +1,8 @@
-using System;
-using Common.Cache.Configuration;
 using Microsoft.Extensions.Options;
+using RediKit.Configuration;
 using StackExchange.Redis;
 
-namespace Common.Cache.Redis;
+namespace RediKit.Redis;
 
 internal sealed class RedisConnectionProvider : IRedisDatabaseAccessor, IDisposable
 {

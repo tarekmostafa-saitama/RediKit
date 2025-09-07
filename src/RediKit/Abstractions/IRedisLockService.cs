@@ -1,4 +1,4 @@
-namespace Common.Cache.Abstractions;
+namespace RediKit.Abstractions;
 
 /// <summary>
 /// Abstraction for a distributed lock backed by Redis.
