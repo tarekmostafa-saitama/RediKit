@@ -20,11 +20,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\src\RediKit\RediKit.csproj" />
+    <Folder Include="Serialization\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Serialization\" />
+    <ProjectReference Include="..\..\src\RediKit\RediKit.csproj" />
   </ItemGroup>
 
 </Project>

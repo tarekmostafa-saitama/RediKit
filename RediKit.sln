@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RediKit", "src\RediKit\Redi
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RediKit.UnitTests", "tests\RediKit\RediKit.UnitTests\RediKit.UnitTests.csproj", "{2406C1A0-820B-4C5C-A738-09E2F9377887}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RediKit.UnitTests", "tests\RediKit.UnitTests\RediKit.UnitTests.csproj", "{2406C1A0-820B-4C5C-A738-09E2F9377887}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
